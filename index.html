@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<meta name="author" content="Sam Kopp - MrPilotMan">
+	<meta name="description" content="Burst Mempool Monitor">
+	<meta http-equiv="refresh" content="60">
+	<title>Burst Mempool Monitor</title>
+	<link rel="icon" href="favicon.ico" type="image">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="extract.js"></script>
+</head>
+<body>
+	<div class="mempool">
+		<div class="left-column">
+			<div class="fees-waiting">
+				<div class="slots">
+					<label>Fee Slot (Plank)</label>
+				</div>
+				<div class="num-unconfirmed">
+					<label>Number Waiting</label>
+				</div>	
+			</div>
+			<div class="tx-list">
+				<div class="tx-list-titles">
+					<label>Sender</label>
+					<label>Recipient</label>
+					<label>Amount (BURST)</label>
+					<label>Fee (Planck)</label>
+					<label>Broadcasted</label>
+				</div>
+				<div class="individual-txs">
+					<div class="sender"></div>
+					<div class="recipient"></div>
+					<div class="amount"></div>
+					<div class="fee"></div>
+					<div class="broadcasted"></div>
+				</div>
+			</div>
+		</div>
+		<div class="right-column">
+			<div class="guage-charts">
+				<div id="fee-guage"></div>
+				<div id="congestion-guage"></div>
+			</div>
+			<div class="type-waiting">
+				<div class="tx-types">
+					<label>Type Waiting</label>
+				</div>
+				<div class="tx-types-waiting">
+					<label>Number Waiting</label>
+				</div>
+			</div>
+			<div class="min-fee">
+				<div class="instant">
+					<label>Instant</label>
+				</div>
+				<div class="next-block">
+					<label>Next Block</label>
+				</div>
+				<div class="one-hour">
+					<label>1 Hour</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

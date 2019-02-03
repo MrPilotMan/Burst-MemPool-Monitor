@@ -1,0 +1,53 @@
+	.et_pb_code_inner {
+		min-height: 1000px;
+	}
+
+	.mempool {
+		min-height: 1000px;
+	}
+
+	.mempool, .fees-waiting, .type-waiting {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.left-column {
+		height: 600px;
+	}
+
+	.right-column {
+		height: 600px;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.min-fee {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.individual-txs, .tx-list-titles {
+		display: grid;
+		grid-template-columns: 2fr 2fr .9fr .9fr .9fr;
+	}
+
+	.individual-txs {
+		overflow: scroll;
+		min-height: 300px;
+		max-height: 677px;
+	}
+
+	.fees-waiting {
+		min-height: 100px;
+		max-height: 300px;
+	}
+
+	.guage-charts {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#fee-guage, #congestion-guage {
+		display: inline-block;
+		margin: 0 auto;
+	}
